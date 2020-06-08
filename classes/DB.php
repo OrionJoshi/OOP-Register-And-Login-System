@@ -4,7 +4,7 @@
         private $_pdo,
                 $_query,
                 $_error = false,
-                $results,
+                $_results,
                 $_count = 0;
         
         private function __construct() {
