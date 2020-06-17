@@ -52,6 +52,6 @@
         <label for="name">Enter your name</label>
         <input type="text" name="name" value="<?php echo escape(Input::get('name')); ?>" id="name">
     </div>
-
+    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
     <input type="submit" value="Register">
 </form>
