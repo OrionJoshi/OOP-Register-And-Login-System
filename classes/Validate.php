@@ -20,7 +20,10 @@
                 }
             }
         }
-
+        
+        private function addError($error) {
+            $this->_errors[] = $error;
+        }
     }
 
 ?>
