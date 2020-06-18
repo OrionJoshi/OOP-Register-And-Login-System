@@ -10,7 +10,14 @@
             ));
 
             if($validation->passed()) {
-                
+                $user = new User();
+                $login = $user->login(Input::get('username'), Input::get('password'));
+
+                if($login) {
+                    echo "Success";
+                } else {
+                    echo '<p>Sorry, logging failed.</p>';
+                }
             } else {
                 foreach($validation->errors() as $error) {
                     echo $error . '<br>';
