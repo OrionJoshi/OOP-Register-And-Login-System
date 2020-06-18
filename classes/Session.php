@@ -17,7 +17,7 @@
             if(self::exists($name)) {
                 unset($_SESSION[$name]);
             }
-        }(
+        }
 
         public static function flash($name, $string = '') {
             if(self::exists($name)) {
